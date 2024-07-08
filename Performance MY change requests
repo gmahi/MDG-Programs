@@ -1,0 +1,12 @@
+Dear customer,
+the system was flooded with Idoc error handling tasks. The problem and solution is described in SAP note 
+
+1504215 - Poor performance in transaction SBWP and My Inbox (Mainly due to the inbox being flooded with old work items)
+
+As a result most of the 3 million entries in table SWWUSERWI are related to IDoc error handling workitems with no user assigned. This huge number of entries decreases the performance of workflow processing, in your case the accessing of change requests.
+
+After you applied the recommendations from note 1504215 i recommend to clean the workflow tables with the procedure described in sap note
+ 2248565 - Performance for access to tables SWWUSERWI and SWWORGTASK 
+to delete inconsistent/orphaned/useless entries.
+
+I attached some screenshots for more details.
