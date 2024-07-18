@@ -1,1 +1,38 @@
 CVI_CHECK_VISIBILITY - MDG Field Property Analysis https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/sap-s-4hana-business-partner-field-status-analysis/ba-p/13544287
+2848273 - CVI_BDT: Find reason for field status (required, hidden etc.) of fields in transaction BP (CVI_CHECK_VISIBILITY)
+SAP Note, Version: 3, Released On: 30.03.2021
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Symptom
+You are wondering why a field is required, hidden, display-only or optional in transaction BP, especially but not only in a customer- or supplier-relevant role or role grouping. The new report CVI_CHECK_VISIBILITY will tell you which customizing is responsible for this field status.
+
+In addition you can use the new report CVI_CHECK_VISIBILITY_BUPR for fields in the relationships.
+
+There are two more new reports CVI_CHECK_VISIBILITY_CUSTOMER and CVI_CHECK_VISIBILITY_VENDOR. They are useful when you only know the customer- or supplier-side names of fields when using the complex interface (IDoc processing, MDG replication service, BAPI calls, UI5 app).
+
+Besides the reports this note also creates transactions:
+
+CVI_CHECK_VISIBILITY
+CVI_CHECK_VISI_BUPR
+CVI_CHECK_VISI_CUST
+CVI_CHECK_VISI_VEND
+
+Other Terms
+CVI, Customer Vendor Integration, mandatory, obligatory, display, FMOD, FMOD1, FMOD2, BDT, field modification, field modifications, field status, field statuses
+
+Reason and Prerequisites
